@@ -6,7 +6,6 @@ This is the backend service for the **KKP Group — Textile Analytics Dashboard*
 
 This backend is designed not only to serve data but to provide business health scoring, performer extraction, and conversion analytics right inside the response. 
 
-### Standard Data Endpoints
 * `GET /api/overview` — High-level aggregation of primary KPIs with automated insight generation.
 * `GET /api/orders` — Dynamic view of order-level metrics. Supports queries like `?status=Confirmed&agent=Suresh&weave=plain`.
 * `GET /api/orders/status` — Confirmed / Processed / Declined breakdown with bottleneck indicators.
@@ -18,8 +17,6 @@ This backend is designed not only to serve data but to provide business health s
 * `GET /api/customers` — Customer activity scoring based on recency thresholds (Supports `?days=30` filter).
 * `GET /api/weekly-trend` — 4-week rolling average trend & target velocity.
 * `GET /api/funnel` — Multi-stage sales funnel drop-off analysis.
-
-### Advanced Analytical Endpoints
 * `GET /api/analytics/momentum` — Month-over-month revenue momentum score with signal classification (Accelerating/Decelerating/Critical Drop).
 * `GET /api/analytics/affinity-matrix` — Agent × Customer confirmation rate matrix with intelligent routing recommendations.
 * `GET /api/analytics/rfm` — Customer loyalty segmentation using RFM (Recency, Frequency, Monetary) scoring.
